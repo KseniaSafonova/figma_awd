@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+<style>
+    .gridcontainer {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 5% 10% 1fr 25% ;
+        grid-template-areas: 
+        "header header header header header header header header"
+        "logo logo menu menu menu right_block right_block right_block"
+        "main main main main main main main main"
+        "s-1 s-1 s-1 s-1 s-2 s-2 s-2 s-2";
+        
+    }
+
+    header {
+        grid-area: header;
+        border: 1px solid black;
+        text-align: right;
+        background: #F4F4F4;
+
+    }
+
+    main {
+        grid-area: main;
+        border: 1px solid black;
+        text-align: center;
+}
+    .logo {
+        grid-area: logo;
+        border: 1px solid black;
+    }
+
+    .menu {
+        grid-area: menu;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .right_block {
+        grid-area: right_block;
+        border: 1px solid black;
+    }
+
+    .section-1 {
+    grid-area: s-1;
+    border: 1px solid black;
+    }
+
+    .section-2 {
+        grid-area: s-2;
+    border: 1px solid black;
+    }
+
+    a {
+        text-decoration: none;
+        color: #AAAAAA;
+        margin: 3%;
+    }
+    .menu a {
+        color:black;
+        margin: 5%;
+    }
+
+    .contacts {
+        color: #AAAAAA;
+
+    }
+    .pict {
+        margin: 5%;
+        box-sizing: border-box;
+    }
+</style>
+
+</head>
+<body>
+<div class="gridcontainer">
+    <header>
+        <div class="contacts"><a href="@"> CONTACT SALES</a> TEL 646-791-3726 <a href="russianversion">US</a></div>
+    </header>
+    <div class="logo"></div>
+    <nav class="menu">
+       <a href="@">PRODUCTS</a>  
+       <a href="@">EXPLORE</a>  
+       <a href="@">SHOP</a>
+    </nav>
+    <div class="right_block"></div>
+    <main>
+        <div class="pict"><img src="pict.png" alt="picture" width="50%"></div>    
+    </main>
+    <div class="section-1">Design that inspires a better way to work.</div>
+    <div class="section-2">We've developed a series of purpose-built rooms that offer companies looking for change an affordable, sustainable, and flexible alternative to fixed construction and traditional office design.</div>
+</div>
+</body>
+</html>
