@@ -45,7 +45,7 @@
 
     .contacts {
         color: #AAAAAA;
-        padding:8px;
+        padding: 0.5%;
     }
 
     .logo {
@@ -66,7 +66,7 @@
 
     .right_block {
         grid-area: right_block;
-        padding:7%;
+        padding:4%;
         font-size: 0.75em;
         letter-spacing: 2px;
         border-bottom: 1px solid #E0E0E0;
@@ -74,7 +74,6 @@
 
     .adresses {
         float: left;
-        margin-left: 50%;
     }
 
     #point {
@@ -113,8 +112,6 @@
         text-align: center;
     }
     a {
-        text-decoration: none;
-        color:black;
         margin: 2%;
     }
 
@@ -122,18 +119,18 @@
         float: left;
         margin-left: 10%;
     }
+
     }
 
     @media (max-width: 767px) and (min-width: 375px) {
        .gridcontainer{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 5% 10% 10% 1fr 35%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 5% 10% 1fr 35%;
         grid-template-areas: 
-        "header header header"
-        "logo menu menu"
-        "right_block right_block right_block"
-        "main main main"
-        "s-1 s-2 s-2";
+        "header header header header"
+        "logo menu menu right_block"
+        "main main main main"
+        "s-1 s-1 s-2 s-2";
        } 
        
         header {
@@ -142,28 +139,52 @@
     }
 
     .menu {
-        font-size: 0.6em; 
+        font-size: 0.7em; 
+        border:none;
+        padding-top: 4%;
     }
 
     .right_block {
-        padding: 0;
-        font-size: 0.6em;
+        padding:0;
+        font-size: 0.5em;
+        border:none;
+        text-align: center;
     }
 
     a {
-        margin: 0.5%;
+        margin: 3%;
     }
 
     #logo {
         width:30%;
+        border:none;
+    }
+
+    .adresses {
+        float:left;
+    }
+
+    .basket {
+        float:none;
+        padding-top: 2%;
+    }
+
+    .logo {
+        border:none;
+    }
+
+    main {
+        border-top: 1px solid #E0E0E0;
     }
 
     #point {
-        width:10%;
+        width:20%;
+        visibility: visible;
+        padding:5%;
     }
 
     #basket {
-        width:50%; 
+        width:15%; 
     }
 
     .section-1 {
@@ -199,7 +220,7 @@
        <a href="@">SHOP</a>
     </nav>
     <div class="right_block">
-        <div class="adresses" style="width: 30%;">
+        <div class="adresses" style="width: 50%;">
             <img src="point.png" alt="map" id="point"><a href="@">SHOWROOMS</a>
         </div>
         <div class="basket">
