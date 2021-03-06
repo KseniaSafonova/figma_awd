@@ -35,7 +35,7 @@
         grid-area: header;
         text-align: right;
         background: #F4F4F4;
-        font-size: 0.75em;
+        font-size: 12px;
         letter-spacing: 2px;
     }
 
@@ -59,7 +59,7 @@
         grid-area: menu;
         text-align: center;
         padding: 7%;
-        font-size: 0.75em;
+        font-size: 12px;
         letter-spacing: 2px;
         border-bottom: 1px solid #E0E0E0;
     }
@@ -67,7 +67,7 @@
     .right_block {
         grid-area: right_block;
         padding:4%;
-        font-size: 0.75em;
+        font-size: 12px;
         letter-spacing: 2px;
         border-bottom: 1px solid #E0E0E0;
     }
@@ -95,22 +95,33 @@
 
     .section-1 {
         grid-area: s-1;
-        font-size: 3em;
+        font-size: 48px;
         padding-left: 20%;
         padding-right: 20%;
     }
 
     .section-2 {
         grid-area: s-2;
-        font-size: 1.5em;
+        font-size: 24px;
         color: #AAAAAA;
         padding-right: 15%;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        header {
+    header {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .menu {
+        font-size: 2vw;
+    }
+
+    .right_block {
+        font-size: 2vw;
         text-align: center;
     }
+    
     a {
         margin: 2%;
     }
@@ -120,10 +131,14 @@
         margin-left: 10%;
     }
 
+    #logo {
+        width:45%;
+    }
+
     }
 
     @media (max-width: 767px) and (min-width: 375px) {
-       .gridcontainer{
+    .gridcontainer{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 5% 10% 1fr 35%;
         grid-template-areas: 
@@ -131,22 +146,22 @@
         "logo menu menu right_block"
         "main main main main"
         "s-1 s-1 s-2 s-2";
-       } 
+    } 
        
-        header {
+    header {
         text-align: center;
-        font-size: 0.6em;
+        font-size: 2vw;
     }
 
     .menu {
-        font-size: 0.7em; 
+        font-size: 2vw;
         border:none;
         padding-top: 4%;
     }
 
     .right_block {
         padding:0;
-        font-size: 0.5em;
+        font-size: 2vw;
         border:none;
         text-align: center;
     }
@@ -156,7 +171,7 @@
     }
 
     #logo {
-        width:30%;
+        width:45%;
         border:none;
     }
 
@@ -189,19 +204,17 @@
 
     .section-1 {
         grid-area: s-1;
-        font-size: 1.2em;
+        font-size: 6vw;
         padding-left: 20%;
         padding-right: 20%;
     }
 
     .section-2 {
-        grid-area: s-2;
-        font-size: 1em;
+        font-size: 4vw;
         color: #AAAAAA;
         padding-right: 15%;
     }
     }
-
 </style>
 
 </head>
